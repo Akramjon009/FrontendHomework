@@ -1,0 +1,116 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li, header, nav, section, article, aside, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    height: 96vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;   
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+article {
+    flex: 2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Add styles for the about image */
+.about-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 330px;
+    width: 330px;
+    text-align: left;
+}
+
+.akram-text
+{
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    font-weight: 700;
+    width: 200px;
+
+}
+
+.akram{
+    display: flex;
+    gap: 50px ;
+}
+
+.business-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 1200;
+    width: 1500;
+  }
+  
+  .name {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .job-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .phone {
+    font-size: 20px;
+  }
