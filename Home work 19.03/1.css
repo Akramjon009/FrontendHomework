@@ -70,6 +70,12 @@ footer {
     width: 330px;
     text-align: left;
 }
+.about-imageakramjon{
+    max-width: 50%;
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+}
 
 .akram-text
 {
@@ -109,3 +115,17 @@ footer {
   .phone {
     font-size: 20px;
   }
+#telegram-icon {
+    position: fixed;
+    bottom: 95px; 
+    right: 20px; 
+    z-index: 9999; 
+    cursor: pointer;
+}
+.telegram-iconNew
+{
+    position: fixed;
+    bottom: 100px; 
+    right: 100px; 
+    z-index: 9999; 
+}
