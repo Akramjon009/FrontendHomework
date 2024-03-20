@@ -1,17 +1,14 @@
-/* Resetting default margin and padding */
 body, h1, h2, h3, p, ul, li, header, nav, section, article, aside, footer {
     margin: 0;
     padding: 0;
 }
 
-/* Setting up basic styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f0f0f0;
     height: 96vh;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     flex-direction: column;   
 }
@@ -46,9 +43,8 @@ nav ul li a:hover {
 }
 
 .main-content {
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
+    width: 100%;
 }
 
 article {
@@ -66,7 +62,6 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-/* Add styles for the about image */
 .about-image {
     max-width: 100%;
     height: auto;
@@ -88,7 +83,7 @@ footer {
 
 .akram{
     display: flex;
-    gap: 50px ;
+    gap: 50px ;   
 }
 
 .business-card {
