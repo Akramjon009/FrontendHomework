@@ -13,6 +13,7 @@ body {
 	background-size: cover;
 	flex-direction: column;
 	height: 96vh;
+	background-attachment: fixed;
 }
 
 .flex {

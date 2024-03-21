@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    width: 739px;
+    overflow: hidden;
+  }
+  
+  .bottomright {
+    position: absolute;
+    bottom: 175px;
+    right: 1px;
+    font-size: 18px;
+    position: inherit;
+  }
+  .bottomleft
+  {
+    position: absolute;
+    bottom: 160px;
+    left: 650px;
+    font-size: 18px;
+    position: inherit;
+  }
+  
+  .center
+  {
+    position: absolute;
+    bottom: 325px;
+    left: 350px;
+    font-size: 18px;
+    position: inherit;
+  }
+  img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  }
