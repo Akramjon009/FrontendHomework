@@ -28,8 +28,26 @@
     font-size: 18px;
     position: inherit;
   }
+  
   img { 
     width: 100%;
     height: auto;
     opacity: 0.3;
   }
+.image-container {
+  width: 200px; 
+  height: 200px;
+  overflow: hidden; 
+  position: relative; 
+  background-attachment: fixed;
+}
+
+.image {
+  position: absolute; 
+  left: 0;
+  transition: transform 0.3s ease; 
+}
+
+.image-container:hover .image {
+  transform: translate(30px); 
+}

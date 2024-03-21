@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 40%;
+    height: 35vh;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.box {
+    height: 100%;
+    border: 3px solid rgb(79, 126, 151);
+    border-radius: 20px;
+    text-align: start;
+    position: relative;
+    justify-content: start;
+}
+
+.box a {
+    border-radius: 10px 0 0 0;
+    background-color: rgb(79, 126, 151);
+    padding: 10px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+}
