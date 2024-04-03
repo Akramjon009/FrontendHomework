@@ -1,3 +1,5 @@
+let selected = null;
+
 document.addEventListener("DOMContentLoaded", function() {
     const addCardBtn = document.getElementById('addCardBtn');
     const updateCardBtn = document.getElementById('updateCardBtn');
@@ -38,11 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
       const cardText = document.createElement('p');
       cardText.classList.add('card-text');
       cardText.textContent = contentInput.value || "Content";
+      titleInput.value = "";
+      contentInput.value = "";
   
       const deleteBtn = document.createElement('button');
       deleteBtn.classList.add('btn', 'btn-danger', 'mx-2');
       deleteBtn.textContent = 'Delete';
       deleteBtn.addEventListener('click', function() {
+        titleInput.value = "";
+        contentInput.value = "";
         card.remove();
       });
   
@@ -72,7 +78,19 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateCard(card) {
       const cardTitle = card.querySelector('.card-title');
       const cardText = card.querySelector('.card-text');
-      cardTitle.textContent = titleInput.value || "Title";
-      cardText.textContent = contentInput.value || "Content";
-    }
+      const updateBtn = card.querySelector('.btn-success');
+
+      selected = updateBtn;
+  
+      if (cardTitle && cardText && updateBtn) {
+          cardTitle.textContent = titleInput.value || "Title";
+          cardText.textContent = contentInput.value || "Content";
+          titleInput.value = "";
+          contentInput.value = "";
+          currentCard = null;
+          updateBtn.textContent = 'Update';
+      }
+  }
+  
   });
+  
