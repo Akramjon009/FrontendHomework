@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Management</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cards</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Product Management</h1>
-    
-    <div id="productForm">
-        <input type="text" id="nameInput" placeholder="Name">
-        <input type="number" id="priceInput" placeholder="Price">
-        <button onclick="createProduct()">Create Product</button>
+  <div class="container">
+    <h1>Product Cards</h1>
+    <div class="form-group">
+      <label for="titleInput">Name:</label>
+      <input type="text" id="titleInput">
     </div>
-
-    <div id="productList">
-        <h2>Products</h2>
-        <ul id="products"></ul>
+    <div class="form-group">
+      <label for="contentInput">Price:</label>
+      <input type="text" id="contentInput">
     </div>
-
-    <script src="script.js"></script>
+    <button id="addCardBtn">Add Card</button>
+    <button id="updateCardBtn">Update Card</button>
+    <div id="cardContainer" class="card-container"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
