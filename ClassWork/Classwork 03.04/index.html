@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Cards</title>
+  <title>Card Management</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>Product Cards</h1>
-    <div class="form-group">
-      <label for="titleInput">Name:</label>
-      <input type="text" id="titleInput">
-    </div>
-    <div class="form-group">
-      <label for="contentInput">Price:</label>
-      <input type="text" id="contentInput">
-    </div>
+    <input type="text" id="titleInput" placeholder="Enter Title">
+    <textarea id="contentInput" placeholder="Enter Content"></textarea>
     <button id="addCardBtn">Add Card</button>
     <button id="updateCardBtn">Update Card</button>
-    <div id="cardContainer" class="card-container"></div>
+    <div id="cardContainer"></div>
   </div>
   <script src="script.js"></script>
 </body>

@@ -12,5 +12,5 @@ class Person {
     }
 }
 
-const john = new Person("Otabek", 17);
+const john = new Person("Akramjon", 15);
 console.log(john.introduce());
